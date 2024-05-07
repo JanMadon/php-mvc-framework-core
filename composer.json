@@ -1,5 +1,5 @@
 {
-    "name": "jm/php-mvc-framework-core",
+    "name": "janm/php-mvc-framework-core",
     "description": "My own php framework",
     "autoload": {
         "psr-4": {
