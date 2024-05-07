@@ -1,0 +1,16 @@
+{
+    "name": "jm/php-mvc-framework-core",
+    "description": "My own php framework",
+    "autoload": {
+        "psr-4": {
+            "Jm\\PhpMvcFrameworkCore\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Jan",
+            "email": "jan.madon@gmail.com"
+        }
+    ],
+    "require": {}
+}
