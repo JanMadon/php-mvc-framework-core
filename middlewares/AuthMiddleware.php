@@ -1,9 +1,9 @@
 <?php
 
-namespace app\core\middlewares;
+namespace janm\phpmvc\middlewares;
 
-use app\core\Aplication;
-use app\core\exception\ForbiddenException;
+use janm\phpmvc\Aplication;
+use janm\phpmvc\exception\ForbiddenException;
 
 class AuthMiddleware extends BaseMiddleware
 {

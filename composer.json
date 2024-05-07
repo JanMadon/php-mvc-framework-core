@@ -3,7 +3,7 @@
     "description": "My own php framework",
     "autoload": {
         "psr-4": {
-            "Jm\\PhpMvcFrameworkCore\\": "src/"
+            "janm\\phpmvc\\": "."
         }
     },
     "authors": [

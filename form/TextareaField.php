@@ -1,8 +1,8 @@
 <?php
 
-namespace app\core\form;
+namespace janm\phpmvc\form;
 
-use app\core\Model;
+use janm\phpmvc\Model;
 
 class TextareaField extends BaseField
 {

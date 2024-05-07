@@ -1,8 +1,8 @@
 <?php
 
-namespace app\core\db;
+namespace janm\phpmvc\db;
 
-use app\core\Aplication;
+use janm\phpmvc\Aplication;
 
 class DataBase
 {

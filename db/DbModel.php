@@ -1,9 +1,9 @@
 <?php
 
-namespace app\core\db;
+namespace janm\phpmvc\db;
 
-use app\core\Aplication;
-use app\core\Model;
+use janm\phpmvc\Aplication;
+use janm\phpmvc\Model;
 
 abstract class DbModel extends Model
 {

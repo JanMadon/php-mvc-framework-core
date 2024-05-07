@@ -1,8 +1,8 @@
 <?php
 
-namespace app\core;
+namespace janm\phpmvc;
 
-use app\core\exception\NotFoundException;
+use janm\phpmvc\exception\NotFoundException;
 use JetBrains\PhpStorm\NoReturn;
 
 class Router

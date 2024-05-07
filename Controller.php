@@ -1,8 +1,8 @@
 <?php
 
-namespace app\core;
+namespace janm\phpmvc;
 
-use app\core\middlewares\BaseMiddleware;
+use janm\phpmvc\middlewares\BaseMiddleware;
 use JetBrains\PhpStorm\NoReturn;
 
 class Controller

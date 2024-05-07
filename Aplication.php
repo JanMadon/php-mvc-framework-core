@@ -1,9 +1,9 @@
 <?php
 
-namespace app\core;
+namespace janm\phpmvc;
 
-use app\core\db\DataBase;
-use app\core\db\DbModel;
+use janm\phpmvc\db\DataBase;
+use janm\phpmvc\db\DbModel;
 
 class Aplication
 {
