@@ -7,7 +7,10 @@ use janm\phpmvc\db\DbModel;
 
 class Aplication
 {
+    const EVENT_BEFORE_REQUEST = 'beforeRequest';
+    const EVENT_AFTER_REQUEST = 'afterRequest';
 
+    protected array $eventListeners = [];
     public static Aplication $app;
     public static string $ROOT_DIR;
     public DataBase $db;
@@ -51,6 +54,8 @@ class Aplication
 
     public function run()
     {
+        $this->triggerEvents(self::EVENT_BEFORE_REQUEST);
+
         try {
             echo $this->router->resolve();
         } catch (\Exception $e){
@@ -86,5 +91,18 @@ class Aplication
         $this->session->remove('user');
     }
 
+    public function on($eventName, $callback)
+    {
+        $this->eventListeners[$eventName][] = $callback;
+    }
+
+    private function triggerEvents($eventName)
+    {
+        $callbacks = $this->eventListeners[$eventName] ?? [];
+        foreach ($callbacks as $callback) {
+            call_user_func($callback);
+        }
+
+    }
 
 }
